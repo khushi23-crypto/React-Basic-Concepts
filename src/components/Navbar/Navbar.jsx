@@ -16,7 +16,7 @@ function Navbar() {
                 <a href="/useeffect" className='menu-circle'><FaCodeBranch />&nbsp;useEffect</a>
                 <a href="/datafetcher" className='menu-circle'><FaTools />&nbsp;DataFetcher</a>
                 <a href="/loggercomponent" className='menu-circle'><FaProjectDiagram />&nbsp;LoggerComponent</a>
-                <a href="/achievements" className='menu-circle'><FaTrophy />&nbsp;Achievements</a>
+                <a href="/timecomponent" className='menu-circle'><FaTrophy />&nbsp;TimeComponent</a>
                 <a href="/about" className='menu-circle'><FiInfo /> &nbsp;About</a>
                 <a href="/contact" className='menu-circle'><BiSolidContact />&nbsp;Contact</a>
             </nav>
