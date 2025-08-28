@@ -5,8 +5,8 @@ import UseState from './components/UseState';
 import UseEffect from './components/UseEffect/UseEffect'
 import DataFetcher from './components/DataFetcher';
 import LoggerComponent from './components/LoggerComponent';
-import TimeComponent from './components/TimeComponent';
-
+/* import TimeComponent from './components/TimeComponent';
+ */
 function App() {
   return (
     <Router>
