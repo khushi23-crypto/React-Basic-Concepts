@@ -14,8 +14,8 @@ function Navbar() {
             <nav className='nav-menu'>
                 <a href="/usestate" className='menu-circle'><IoHomeSharp /> &nbsp;useState</a>
                 <a href="/useeffect" className='menu-circle'><FaCodeBranch />&nbsp;useEffect</a>
-                <a href="/skills" className='menu-circle'><FaTools />&nbsp;Skills</a>
-                <a href="/projects" className='menu-circle'><FaProjectDiagram />&nbsp;Projects</a>
+                <a href="/datafetcher" className='menu-circle'><FaTools />&nbsp;DataFetcher</a>
+                <a href="/loggercomponent" className='menu-circle'><FaProjectDiagram />&nbsp;LoggerComponent</a>
                 <a href="/achievements" className='menu-circle'><FaTrophy />&nbsp;Achievements</a>
                 <a href="/about" className='menu-circle'><FiInfo /> &nbsp;About</a>
                 <a href="/contact" className='menu-circle'><BiSolidContact />&nbsp;Contact</a>

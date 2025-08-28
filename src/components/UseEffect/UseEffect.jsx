@@ -11,31 +11,45 @@ function UseEffect() {
 
     //variation :1
     //runs on every render 
-    //variation :2
-    //runs on only first render
-    //variation: 3
-    //runs on only when something value is updated
-
-    //variation dependencies
-
-
     /*useEffect(() => {
         alert("I will run on each render")
     })*/
 
+
+    //variation :2
+    //runs on only first render
     /*useEffect(() => {
         alert("I will run on each render")
     },[])*/
 
 
+    //variation: 3
+    //runs on only when something value is updated
     /*useEffect(() => {
         alert('I will run every time when count is updated')
     }, [counting])*/
 
-    useEffect(() => {
+    //variation: 4
+    //multiple dependencies 
+    /*useEffect(() => {
      alert("I will run every time when count/counts is updated")
     }, [count,counts,counting])
-    
+    */
+
+    //variation : 5
+    //iss baar let's add a clean up function
+    useEffect(() => {
+        alert("Count is updated")
+
+        return () => {
+            alert("Count is unmounted from UI")
+        }
+    }, [count])
+
+
+
+
+
     function handleCounter() {
         setCounter(counter + 1)
     }
@@ -43,11 +57,13 @@ function UseEffect() {
     function handleClick() {
         setCount(count + 1);
     }
+
     function handleCounting() {
         setCounting(counting + 1)
     }
+
     function handleCounts() {
-        setCounts(counts +1)
+        setCounts(counts + 1)
     }
 
     return (
