@@ -1,0 +1,26 @@
+.head{
+    padding-top: 90px;
+    padding-left: 150px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+  position: relative;
+  height: 10vh;
+}
+
+.btn {
+  position: absolute;
+  border: 2px solid #000; /* black border, 2px thick */
+  padding: 10px 20px;     /* space inside button */
+  background-color: #4ce6de;  /* optional background */
+  cursor: pointer;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%); /* exact center */
+}
+
