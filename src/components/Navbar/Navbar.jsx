@@ -19,8 +19,10 @@ function Navbar() {
                 <a href="/timecomponent" className='menu-circle'><FaTrophy />&nbsp;TimeComponent</a>
                 <a href="/resizecomponent" className='menu-circle'><FiInfo /> &nbsp;ResizeComponent</a>
                 <a href="/multieffectcomponent" className='menu-circle'><BiSolidContact />&nbsp;MutliEffectComponent</a>
-                <a href="/usecontext" className='menu-circle'><BiSolidContact />&nbsp;useContext</a>
-                <a href="/multieffectcomponent" className='menu-circle'><BiSolidContact />&nbsp;MutliEffectComponent</a>
+                <a href="/childA" className='menu-circle'><FaTools />&nbsp;ChildA</a>
+                <a href="/childB" className='menu-circle'><FaCodeBranch />&nbsp;ChildB</a>
+                <a href="/childC" className='menu-circle'><FaProjectDiagram />&nbsp;ChildC</a>
+                
             </nav>
         </header>
     )
