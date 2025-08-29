@@ -5,6 +5,8 @@ import UseState from './components/UseState';
 import UseEffect from './components/UseEffect/UseEffect'
 import DataFetcher from './components/DataFetcher';
 import LoggerComponent from './components/LoggerComponent';
+import ResizeComponent from './components/ResizeComponent';
+import MultiEffectComponent from './components/MultiEffectComponent';
 /* import TimeComponent from './components/TimeComponent';
  */
 function App() {
@@ -16,8 +18,10 @@ function App() {
         <Route path="/useeffect" element={<UseEffect />} />
         <Route path="/datafetcher" element={<DataFetcher />} />
         <Route path="/loggercomponent" element={<LoggerComponent />} />
-{/*         <Route path="/timecomponent" element={<TimeComponent />} />
+        {/*         <Route path="/timecomponent" element={<TimeComponent />} />
  */}
+        <Route path="/resizecomponent" element={<ResizeComponent />} />
+        <Route path="/multieffectcomponent" element={<MultiEffectComponent />} />
       </Routes>
     </Router>
   );
