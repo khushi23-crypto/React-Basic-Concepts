@@ -19,8 +19,8 @@ function TimeComponent() {
 
   return (
     <div>
-        <h1 style={{ marginTop: '300px', fontSize: '1.5rem',textAlign:'center' }}>Seconds : {seconds}</h1>
-        <h1 >This component is unmount because continuously increase the seconds....</h1>
+{/*         <h1 style={{ marginTop: '300px', fontSize: '1.5rem',textAlign:'center' }}>Seconds : {seconds}</h1>
+ */}        <h1 style={{textAlign:'center', paddingTop:'200px',marginTop:'200px'}}>In This component, second increase continuously so comment out the second part if you want to see go to check the code ....</h1>
     </div>
   )
 }

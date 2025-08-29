@@ -16,7 +16,7 @@
   justify-content: center;
   padding: 20px 20px;
   margin: 0;
-  gap: 50px;
+  gap: 10px;
   position: fixed; /* make it stick to top */
   top: 0; /* top of viewport */
   left: 0;

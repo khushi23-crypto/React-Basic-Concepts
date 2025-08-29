@@ -30,7 +30,8 @@ useEffect(() => {
   >
     Increment Count
   </button>
-  <h2>Seconds: {seconds}</h2>
+  {/* <h2>Seconds: {seconds}</h2> */}
+   <h1 style={{textAlign:'center'}}>In This component, second increase continuously so comment out the second part if you want to see go to check the code ....</h1>
 </div>
   )
 }

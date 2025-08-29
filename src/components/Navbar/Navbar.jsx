@@ -19,6 +19,8 @@ function Navbar() {
                 <a href="/timecomponent" className='menu-circle'><FaTrophy />&nbsp;TimeComponent</a>
                 <a href="/resizecomponent" className='menu-circle'><FiInfo /> &nbsp;ResizeComponent</a>
                 <a href="/multieffectcomponent" className='menu-circle'><BiSolidContact />&nbsp;MutliEffectComponent</a>
+                <a href="/usecontext" className='menu-circle'><BiSolidContact />&nbsp;useContext</a>
+                <a href="/multieffectcomponent" className='menu-circle'><BiSolidContact />&nbsp;MutliEffectComponent</a>
             </nav>
         </header>
     )
