@@ -6,8 +6,8 @@ import UseEffect from './components/UseEffect/UseEffect'
 import DataFetcher from './components/DataFetcher';
 import LoggerComponent from './components/LoggerComponent';
 import ResizeComponent from './components/ResizeComponent';
-import MultiEffectComponent from './components/MultiEffectComponent';
-/* import TimeComponent from './components/TimeComponent';
+/* import MultiEffectComponent from './components/MultiEffectComponent';
+ *//* import TimeComponent from './components/TimeComponent';
  */
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         {/*         <Route path="/timecomponent" element={<TimeComponent />} />
  */}
         <Route path="/resizecomponent" element={<ResizeComponent />} />
-        <Route path="/multieffectcomponent" element={<MultiEffectComponent />} />
-      </Routes>
+{/*      <Route path="/multieffectcomponent" element={<MultiEffectComponent />} />
+ */}      </Routes>
     </Router>
   );
 }
