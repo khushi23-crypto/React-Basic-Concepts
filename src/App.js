@@ -10,6 +10,7 @@ import ResizeComponent from './components/UseEffect/ResizeComponent';
 import MultiEffectComponent from './components/UseEffect/MultiEffectComponent';
 import TimeComponent from './components/UseEffect/TimeComponent';
 import ChildA from './components/UseContext/ChildA';
+import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering';
 import StateLifting from './components/StateLifting';
 //step1: create context
 const UserContext = createContext();
@@ -49,7 +50,7 @@ function App() {
             </ThemeContext.Provider>
           </UserContext.Provider>} />
           <Route path="/statelifting" element={<StateLifting  name={name} setName={setName}/>} />
-
+          <Route path="/conditionalrendering" element={<ConditionalRendering />} />
       </Routes>
     </Router>
   );

@@ -23,6 +23,7 @@ function Navbar() {
                 <a href="/childB" className='menu-circle'><FaCodeBranch />&nbsp;ChildB</a>
                 <a href="/childC" className='menu-circle'><FaProjectDiagram />&nbsp;ChildC</a>
                 <a href="/statelifting" className='menu-circle'><IoHomeSharp />&nbsp;StateLifting</a>
+                <a href="/conditionalrendering" className='menu-circle'><IoHomeSharp />&nbsp;ConditionalRendering</a>
 
 
             </nav>
