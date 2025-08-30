@@ -24,6 +24,7 @@ function Navbar() {
                 <a href="/childC" className='menu-circle'><FaProjectDiagram />&nbsp;ChildC</a>
                 <a href="/statelifting" className='menu-circle'><IoHomeSharp />&nbsp;StateLifting</a>
                 <a href="/conditionalrendering" className='menu-circle'><IoHomeSharp />&nbsp;ConditionalRendering</a>
+                <a href="/eventhandling" className='menu-circle'><IoHomeSharp />&nbsp;EventHandling</a>
 
 
             </nav>

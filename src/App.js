@@ -12,6 +12,7 @@ import TimeComponent from './components/UseEffect/TimeComponent';
 import ChildA from './components/UseContext/ChildA';
 import ConditionalRendering from './components/ConditionalRendering/ConditionalRendering';
 import StateLifting from './components/StateLifting';
+import EventHandling from './components/EventHandling';
 //step1: create context
 const UserContext = createContext();
 //step 2: wrapp all the child inside the provider
@@ -51,6 +52,7 @@ function App() {
           </UserContext.Provider>} />
           <Route path="/statelifting" element={<StateLifting  name={name} setName={setName}/>} />
           <Route path="/conditionalrendering" element={<ConditionalRendering />} />
+          <Route path="/eventhandling" element={<EventHandling />} />
       </Routes>
     </Router>
   );
