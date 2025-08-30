@@ -10,8 +10,9 @@ import ResizeComponent from './components/UseEffect/ResizeComponent';
 import MultiEffectComponent from './components/UseEffect/MultiEffectComponent';
 import TimeComponent from './components/UseEffect/TimeComponent';
 import ChildA from './components/UseContext/ChildA';
+import StateLifting from './components/StateLifting';
 //step1: create context
-//const UserContext = createContext();
+const UserContext = createContext();
 //step 2: wrapp all the child inside the provider
 //step 3: pass the value
 //step 4: go to consumer to consume value
@@ -20,8 +21,13 @@ const ThemeContext = createContext();
 
 
 function App() {
-  //const [user, setUser] = useState({ name: "Kajal" });
+  const [user, setUser] = useState({ name: "Kajal" });
   const [theme, setTheme] = useState('light');
+  //create state
+  //manage state
+  //change state
+  //sbhi child ko state ko sync karwadenge
+  const[name,setName]=useState('');
 
   return (
     <Router>
@@ -35,16 +41,20 @@ function App() {
         <Route path="/resizecomponent" element={<ResizeComponent />} />
         <Route path="/multieffectcomponent" element={<MultiEffectComponent />} />
         <Route path="/childA" element={
-          <ThemeContext.Provider value={{ theme, setTheme }}>
-            <div id="container" style={{backgroundColor:theme==='light'?'antiquewhite':'gray', }}>
-              <ChildA />
-            </div>
-          </ThemeContext.Provider>} />
+          <UserContext.Provider value={user}>
+            <ThemeContext.Provider value={{ theme, setTheme }}>
+              <div id="container" style={{ backgroundColor: theme === 'light' ? 'antiquewhite' : 'gray', }}>
+                <ChildA />
+              </div>
+            </ThemeContext.Provider>
+          </UserContext.Provider>} />
+          <Route path="/statelifting" element={<StateLifting  name={name} setName={setName}/>} />
+
       </Routes>
     </Router>
   );
 }
 
 export default App;
-//export {UserContext}
-export {ThemeContext}
+export {UserContext}
+export { ThemeContext }
