@@ -15,7 +15,6 @@ function Navbar() {
                 <a href="/usestate" className='menu-circle'><IoHomeSharp /> &nbsp;useState</a>
                 <a href="/useeffect" className='menu-circle'><FaCodeBranch />&nbsp;useEffect</a>
                 <a href="/datafetcher" className='menu-circle'><FaTools />&nbsp;DataFetcher</a>
-                <a href="/loggercomponent" className='menu-circle'><FaProjectDiagram />&nbsp;LoggerComponent</a>
                 <a href="/timecomponent" className='menu-circle'><FaTrophy />&nbsp;TimeComponent</a>
                 <a href="/resizecomponent" className='menu-circle'><FiInfo /> &nbsp;ResizeComponent</a>
                 <a href="/multieffectcomponent" className='menu-circle'><BiSolidContact />&nbsp;MutliEffectComponent</a>
@@ -26,9 +25,7 @@ function Navbar() {
                 <a href="/eventhandling" className='menu-circle'><FaTrophy />&nbsp;EventHandling</a>
                 <a href="/reactform" className='menu-circle'><BiSolidContact />&nbsp;ReactForm</a>
                 <a href="/timer" className='menu-circle'><FaCodeBranch />&nbsp;Stopwatch</a>
-
-
-
+                <a href="/usememo" className='menu-circle'><FaProjectDiagram />&nbsp;UseMemo</a>
             </nav>
         </header>
     )
