@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 function UseEffect() {
     const [count, setCount] = useState(0);
@@ -8,12 +8,12 @@ function UseEffect() {
     //first -> side-effect fuction
     //second -> clea n-up function
     //third -> comma seperated dependencies isme jaise array ke andr count likhenge to count jb bhi update hoga ye effect fun chlega 
-
+let val=useRef(0);
     //variation :1
     //runs on every render 
-    /*useEffect(() => {
-        alert("I will run on each render")
-    })*/
+    useEffect(() => {
+        console.log("I will run on each render")
+    })
 
 
     //variation :2
@@ -38,13 +38,13 @@ function UseEffect() {
 
     //variation : 5
     //iss baar let's add a clean up function
-    useEffect(() => {
+    /* useEffect(() => {
         alert("Count is updated")
 
         return () => {
             alert("Count is unmounted from UI")
         }
-    }, [count])
+    }, [count]) */
 
 
 
@@ -55,10 +55,13 @@ function UseEffect() {
     }
 
     function handleClick() {
+       
         setCount(count + 1);
     }
 
     function handleCounting() {
+        val.current=val.current+1;
+        console.log("Value of val:", val.current);
         setCounting(counting + 1)
     }
 
