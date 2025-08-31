@@ -14,6 +14,7 @@ let val=useRef(0);
     useEffect(() => {
         console.log("I will run on each render")
     })
+    let btnRef=useRef();
 
 
     //variation :2
@@ -55,7 +56,6 @@ let val=useRef(0);
     }
 
     function handleClick() {
-       
         setCount(count + 1);
     }
 
@@ -69,6 +69,9 @@ let val=useRef(0);
         setCounts(counts + 1)
     }
 
+    function changeColor(){
+        btnRef.current.style.backgroundColor="red"
+    }
     return (
         <div className="cards-wrapper">
             <div className="card-container">
@@ -83,7 +86,9 @@ let val=useRef(0);
                     <p>Runs on only first render</p>
                 </div>
                 <div className="card-body">
-                    <button type='button' className='btn' onClick={handleCounting}>Click me</button>
+                    <button type='button' className='btn' onClick={handleCounting} ref={btnRef}>Click me</button>
+                    <br/>
+                    <button onClick={changeColor}>Change color of 1st Button</button>
                     <h1 className='head'>Counting : {counting}</h1>
                     <p>Runs on only when update the count render</p>
                 </div>
