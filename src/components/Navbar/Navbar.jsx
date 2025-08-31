@@ -25,6 +25,8 @@ function Navbar() {
                 <a href="/statelifting" className='menu-circle'><IoHomeSharp />&nbsp;StateLifting</a>
                 <a href="/conditionalrendering" className='menu-circle'><IoHomeSharp />&nbsp;ConditionalRendering</a>
                 <a href="/eventhandling" className='menu-circle'><IoHomeSharp />&nbsp;EventHandling</a>
+                <a href="/reactform" className='menu-circle'><IoHomeSharp />&nbsp;ReactForm</a>
+
 
 
             </nav>

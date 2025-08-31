@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
   margin: 0;
   position: fixed;  /* make it stick to top */
   top: 0;            /* top of viewport */
@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 9px 10px; /* keep same as hover */
+  padding: 9px 7px; /* keep same as hover */
   border-radius: 50px; /* same as hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
